@@ -1,0 +1,646 @@
+/* GLOBAL STYLES
+    -------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+
+    color: #5a5a5a;
+
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    border-top: 3px solid #016B3B;
+}
+.navbar-wrapper .navbar {
+
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+    border: 0;
+    float: right;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #3d3d3d;
+    font-size: 15px;
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+    padding: 6px 19px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+    margin-top: 10px;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-top: 75px;
+    margin-bottom: 0px;
+}
+
+.carousel .container {
+    position: relative;
+    z-index: 9;
+}
+
+.carousel-control {
+    color: #ccc;
+    height: 80px;
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+}
+
+.carousel .item {
+    height: 500px;
+}
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel img {
+        width: auto;
+        height: 500px;
+    }
+
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+    .featurette-image.pull-left,
+    .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-inner {
+        margin: -20px;
+    }
+
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel .container {
+
+    }
+    .carousel .item {
+        height: 300px;
+    }
+    .carousel img {
+        height: 300px;
+    }
+    .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        font-size: 18px;
+    }
+
+    .marketing .span4 + .span4 {
+        margin-top: 40px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+}
+.container_body{
+    width: 100%;
+    background-color: #06552F;
+}
+.grid_3 {
+    width: 270px;
+}
+[class*="grid_"] {
+    float: left;
+    min-height: 1px;
+}
+.post1 {
+    position: relative;
+    text-align: center;
+}
+.post1 img {
+    background: #06552F;
+    border-radius: 200px;
+    border: 2px solid #024925;
+    margin-bottom: 29px;
+}
+img {
+    max-width: 100%;
+}
+.post1 .content {
+    padding: 0 5px 41px;
+}
+.post1 h3 {
+    margin-bottom: 24px;
+    font: 400 27px/43px 'Oswald', sans-serif;
+}
+h3 {
+    font: 26px/26px "Fjalla One",sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.post1 p {
+    color: #fff;
+}
+.post1 .simple-button {
+    margin-top: 41px;
+}
+.simple-button {
+    display: inline-block;
+    font: 400 13px/13px "Fjalla One",sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+h6 {
+    font: 400 35px/43px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #5f5f5f;
+}
+.__hover-color {
+    color: #046534;
+}
+h3 a:hover{
+    color: #8E8D8D;
+    text-decoration: none;
+}
+h4{
+    font: 400 25px/43px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #5f5f5f;
+}
+.solucao{
+    background: #c9c9c9;
+    border-radius: 200px;
+    margin-top: 7px;
+}
+.solucao_p{
+    margin-top: 25px;
+}
+.container-produto{
+    width: 100%;
+    margin-top: 25px;
+    background: url('../img/tecnologia.jpg')no-repeat center;;
+    background-attachment: fixed;
+    background-size: cover;
+    height:600px;
+
+}
+.container-virtualizacao {
+    width: 100%;
+    margin-top: 25px;
+    background: url('../img/virtualizacao.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+.btn-default {
+    display: inline-block;
+    font: 400 13px/13px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background: #3ebd9d;
+    padding: 13px 17px 10px 18px;
+    color: #fff;
+}
+.btn-default:hover{
+    text-decoration: none;
+    color:#333333;
+}
+.logotipo{
+    margin-top: 5px;
+}
+
+.logotipo:hover{
+    transition: all 0.3s ease-out 0s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.texto{
+    font: 400 14px/13px 'Oswald', sans-serif;
+}
+.btn-default.btn1 {
+    box-shadow: none;
+    position: relative;
+    text-decoration: none !important;
+    padding: 10px 24px;
+    font: 18px 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    text-shadow: none;
+    color: #ffffff;
+    border-radius: 0;
+    border: none;
+    background: #06552F;
+    display: inline-block;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    text-transform: none;
+}
+.btn-default.btn1:hover {
+    color: #ffffff;
+    background: #2d2d30;
+    text-decoration: none !important;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.contatoh1{
+    font: 400 35px/43px 'Oswald', sans-serif;
+    color: #ffffff;
+    margin-top: 7%;
+}
+.legendcontato{
+    font: 400 25px/43px 'Oswald', sans-serif;
+    color: #5f5f5f;
+}
+.grid_6 {
+    width: 570px;
+}
+[class*="grid_"] {
+    float: left;
+    min-height: 1px;
+
+}
+.post9 {
+    margin-top: 30px;
+    margin-bottom: -6px;
+}
+.post9 img {
+    float: left;
+    margin-right: 25px;
+}
+.post9 .content {
+    margin-top: 1px;
+    border: 1px solid #ddd;
+    display: block;
+    padding: 22px 20px 31px;
+}
+.post9 time {
+    font: 400 22px/25px 'Oswald', sans-serif;
+    color: #2d2d2d;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+}
+.post9 .header {
+    text-transform: uppercase;
+    font: 400 22px/25px 'Oswald', sans-serif;
+    color: #2d2d2d;
+    margin-bottom: 5px;
+}
+.post9 p {
+    color: #2d2d2d;
+}
+.servicos:hover{
+    color: #8E8D8D;
+    text-decoration: none;
+}
+.descricaoservico{
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.post7 .list1 {
+    margin-top: 26px;
+}
+.list1 li {
+    padding-bottom: 10px;
+    position: relative;
+    font: 400 13px/15px 'Oswald', sans-serif;
+    color: #ffffff;
+
+}
+.list1 li a:hover {
+    color: #BEBEBE;
+    text-decoration: none;
+}
+.imagemservico{
+    border: 1px solid #FFFFFF;
+}
+.imagemservico:hover{
+    transition: all 0.3s ease-out 0s;
+    opacity: 0.8;
+}
+.descicao_par{
+    color: #ffffff; 
+    font: 400 22px/43px 'Oswald', sans-serif;
+    margin: 0px 15px 0px 15px;
+}
+.dropdown ul.dropdown-menu {
+    border-radius: 4px;
+    box-shadow: none;
+    margin-top: 20px;
+    width: 200px;
+}
+.menu-top:hover{
+    transition: all 0.3s ease-out 0s;
+    opacity: 0.8;
+
+}
+
+.menu-central:hover{
+    font-weight: bold;
+}
+.span3_parceiros{
+    background-color: #FFFFFF;
+    height: 155px;
+    margin-bottom: 50px;
+}
+.icon-infra{
+    background-image: url('../img/infra.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-center{
+    background-image: url('../img/center.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-inter{
+    background-image: url('../img/mouseicon.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-lock{
+    background-image: url('../img/lock.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-empresa{
+    background-image: url('../img/empresa-img.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-valores{
+    background-image: url('../img/valores.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-virtualizacao{
+    background-image: url('../img/virtualizacao-img.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-armazenamento{
+    background-image: url('../img/armazenamento-img.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-backup{
+    background-image: url('../img/backup-img.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.icon-parceiros{
+    background-image: url('../img/parceiros.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+    margin-top: -3px;
+}
+.icon-micro{
+    background-image: url('../img/micro.png');
+    height: 40px;
+    width: 40px;
+    background-position: 0px 0px;
+}
+.span3-borda{
+    border: 1px solid #ccc;
+}
+.p-produto{
+    text-transform: uppercase;
+    font: 400 16px/20px 'Oswald', sans-serif;
+    color: #2d2d2d;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.preco-produto{
+    color: #219FD1;
+    margin-left: 8px;
+
+}
+.img-produto:hover{
+    transition: all 0.3s ease-out 0s;
+    opacity: 0.8;
+}
+.estrela-azul{
+    background-image: url('../img/micro.png');
+}
+.col-md-12 {
+    width: 100%;
+    float: left;
+}
+.col-md-4 {
+    width: 33.33333333%;
+    float: left;
+}
+.thumbnail {
+    margin-left: 10px;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.text-center {
+    text-align: center;
+    background-color: #ccc;
+}
+.thumbnail>img, .thumbnail a>img {
+    margin-right: auto;
+    margin-left: auto;
+}
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+}
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+}
+.thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+.text-produto{
+    color: #000000;
+}
+.row-produto{
+    margin-left: 0px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.logoparceiro{
+    height: 146px;
+    width: 270px;
+}
